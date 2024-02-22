@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cabeçalho-link a {
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabeçalho-link ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.cabeçalho-link a:hover {
+    color: #f7cf50;
+}
+
+.Container-produto-detalhe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto 0 auto;
+    padding: 20px;
+    max-width: 90%;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto-img {
+    display: flex;
+    align-items: flex-start;
+}
+
+.produto-img img {
+    max-width: 100%;
+    height: auto;
+    padding: 26px;
+    background-color: #fefefe;
+}
+
+.produto-detalhe-texto {
+    padding: 80px;
+}
+
+.produto-detalhe-texto h1 {
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.produto-detalhe-texto h5 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.produto-detalhe-texto h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #030200;
+    margin-bottom: 20px;
+}
+
+#imagem-principal {
+    flex: 1;
+    max-width: 70%;
+    margin-right: 20px;
+}
+
+.miniaturas {
+    display: flex;
+    flex-direction: column;
+}
+
+.miniaturas img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.miniaturas img:hover {
+    border-color: #11a925;
+}
+
+.miniaturas img.ativo {
+    border-color: #007bff;
+}
+
+.btn-detalhe {
+    display: inline-block;
+    background-color: #11a925;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-detalhe:hover {
+    background-color: #065c12;
+
+}
