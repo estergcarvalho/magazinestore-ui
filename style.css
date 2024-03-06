@@ -87,7 +87,7 @@ section h1 {
     font-size: 2rem;
 }
 
-.Container-produtos {
+.container-produtos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
