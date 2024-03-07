@@ -3,22 +3,24 @@ $(document).ready(function () {
         url: "http://localhost:8080/produtos",
         type: 'get',
         dataType: "json",
-        success: function (produtos) {
-            produtos.forEach(function (elemento, index) {
-                $('#lista-produto').append(
-            `<div class="produto">
-                 <a href="produto/detalhe.html">
-                    <img src="img/produtos/ipad-modelo-dois.jpg" alt="">
-                    <p>` + elemento.nome + `</p>
-                    <h5>`+ elemento.preco + `</h5>
-                </a>
-             </div>`
+
+        success: function(produtos) {
+            produtos.forEach(function (elemento) {
+                $('#lista-produtos').append(
+                    '<div class="produto">' +
+                        '<a href="produto/detalhe.html?id=' + elemento.id + '">' +
+                            '<img src="img/produtos/ipad-modelo-dois.jpg" alt="" data-id="' + elemento.id + '">' +
+                            '<p>' + elemento.nome + '</p>' +
+                            '<h5>' + elemento.preco + '</h5>' +
+                        '</a>' +
+                    '</div>'
                 );
             });
 
         },
-        error: function (_status, _response, error) {
+        error: function(_status, _response, error) {
             console.error(error);
         }
     });
+
 });

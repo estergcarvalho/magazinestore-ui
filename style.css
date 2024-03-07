@@ -179,7 +179,7 @@ section h1 {
     margin-top: 3rem;
 }
 
-.Container-produto-oferta img:hover {
+.container-produto-oferta img:hover {
     transform: scale(0.9) translateY(-5px);
     cursor: pointer;
     transition: 0.3s;
@@ -202,7 +202,7 @@ section h1 {
     cursor: pointer;
 }
 
-#Contato {
+#contato {
     display: flex;
     gap: 5rem;
     justify-content: space-around;
