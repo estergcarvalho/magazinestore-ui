@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/produto/css/style-produto-detalhe.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/detalhe.js"></script>
+
     <title>Produto Detalhe</title>
 </head>
 
 <body>
-
     <header>
-
         <div class="logo">
             <h1>magazineStore</h1>
-        </div><!--logo-->
+        </div>
 
         <div class="cabeçalho-link">
             <ul>
@@ -43,42 +46,28 @@
                     <a href="/index.html">Carrinho</a>
                 </li>
             </ul>
-        </div><!--cabeçalho-link-->
-
+        </div>
     </header>
 
-    <section class="Container-produto-detalhe">
-
+    <section class="container-produto-detalhe">
         <div class="produto-img">
-
             <img src="/img/produtos/ipad-modelo-dois.jpg" alt="iPad Pro Cinza" id="imagem-principal">
 
             <div class="miniaturas">
-
                 <img src="/img/produtos/ipad-modelo-dois.jpg" class="miniatura" alt="miniatura 1">
                 <img src="/img/produtos/ipad-modelo-dois.jpg" class="miniatura" alt="miniatura 1">
                 <img src="/img/produtos/ipad-modelo-dois.jpg" class="miniatura" alt="miniatura 2">
                 <img src="/img/produtos/ipad-modelo-dois.jpg" class="miniatura" alt="miniatura 3">
-
             </div>
-
-        </div><!--produto-detalhe-img-e-miniatura-->
-
-        <div class="produto-detalhe-texto">
-
-            <h1>Ipad Pro Cinza</h1>
-
-            <h5>O iPad vem com tela Retina de 10,2 polegadas,<br>
-                Com chip A13 Bionic, 64 GB Wi-Fi câmera frontal<br>
-                de 12 MP, câmera traseira de 8 MP, Touch ID<br>
-                câmera frontal ultra-angular com Palco Central </h5>
-
-            <h3>R$ 7.999,90</h3>
-
-            <a href="#" class="btn-detalhe">Comprar</a>
-
         </div>
 
+        <div class="produto-detalhe">
+            <h1 class="titulo"></h1>
+            <h3 class="marca"></h3>
+            <h5 class="descricao"></h5>
+            <h3 class="preco"></h3>
+            <a href="/index.html" class="btn-comprar">Comprar</a>
+        </div>
     </section>
 
 </body>
