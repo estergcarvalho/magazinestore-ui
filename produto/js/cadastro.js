@@ -6,8 +6,12 @@ $(document).ready(function() {
             nome: $('#nome').val(),
             descricao: $('#descricao').val(),
             marca: $('#marca').val(),
-            preco: $('#preco').val()
+            preco: $('#preco').val(),
+            imagem: $('#imagem').files[0],
+            
         };
+
+        console.log("enviando imagem" + imagem)
 
         $.ajax({
             url: "http://localhost:8080/produtos",
