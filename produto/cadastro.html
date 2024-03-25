@@ -51,27 +51,31 @@
 
     <div>
         <h2>Cadastro</h2><br>
-        <form id="form-produto">
+        <form id="form-produto"  method="post" enctype="multipart/form-data">
 
             <div class="cadastro-produto">
-                <label for="nome">Nome</label>
+                <label for="nome">Nome:</label>
                 <input type="text" placeholder="Digite o nome do produto" id="nome" required name="nome">
             </div>
 
             <div class="cadastro-produto">
-                <label for="descricao">Descrição</label>
-                <textarea placeholder="Digite a descrição do produto" id="descricao" required
-                    name="descricao"></textarea>
+                <label for="descricao">Descrição:</label>
+                <textarea placeholder="Digite a descrição do produto" id="descricao" required name="descricao"></textarea>
             </div>
 
             <div class="cadastro-produto">
-                <label for="marca">Marca</label>
+                <label for="marca">Marca:</label>
                 <input type="text" placeholder="Digite a marca do produto" id="marca" required name="marca">
             </div>
 
             <div class="cadastro-produto">
-                <label for="valor">Preço</label>
+                <label for="valor">Preço:</label>
                 <input type="text" placeholder="Digite o preço do produto" id="preco" required name="preco">
+            </div>
+
+            <div class="cadastro-produto">
+                <label for="imagem">Imagem:</label>
+                <input type="file" id="imagem" accept="image/*" required name="imagem">
             </div>
 
             <button type="submit">Cadastrar</button>
