@@ -6,12 +6,15 @@ $(document).ready(function() {
 
         success: function(produtos) {
             produtos.forEach(function (elemento) {
+
+                var preco= 'R$' + (elemento.preco).toFixed(2);
+
                 $('#lista-produtos').append(
                     '<div class="produto">' +
                         '<a href="produto/detalhe.html?id=' + elemento.id + '">' +
                             '<img src="img/produtos/ipad-modelo-dois.jpg" alt="" data-id="' + elemento.id + '">' +
                             '<p>' + elemento.nome + '</p>' +
-                            '<h5>' + elemento.preco + '</h5>' +
+                            '<h5>' + preco + '</h5>' +
                         '</a>' +
                     '</div>'
                 );
