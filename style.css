@@ -169,7 +169,7 @@ section h1 {
     transform: scaleY(1.2);
 }
 
-.Container-produto-oferta {
+.container-produto-oferta {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -179,27 +179,22 @@ section h1 {
     margin-top: 3rem;
 }
 
-.container-produto-oferta img:hover {
-    transform: scale(0.9) translateY(-5px);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 .produto-oferta {
     background-color: var(--background-color-produto);
     color: var(--color-preto);
-    border-radius: 1px solid var(--color-preto1);
 }
 
 .produto-oferta img {
     width: 250px;
     height: auto;
-    transition: 0.35s ease;
 }
 
-.produto-oferta img:hover {
-    transform: scale(0.9) translateY(-5px);
-    cursor: pointer;
+.produto-oferta h3,
+h4 {
+    text-decoration: none;
+    color: var(--color-preto);
+    font-size: 15px;
+    font-weight: normal;
 }
 
 #contato {
