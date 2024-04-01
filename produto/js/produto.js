@@ -11,13 +11,14 @@ $(document).ready(function() {
 
                 $('#lista-produtos').append(
                     '<div class="produto">' +
-                        '<a href="produto/detalhe.html?id=' + elemento.id + '">' +
-                            '<img src="img/produtos/ipad-modelo-dois.jpg" alt="" data-id="' + elemento.id + '">' +
-                            '<p>' + elemento.nome + '</p>' +
-                            '<h5>' + preco + '</h5>' +
-                        '</a>' +
+                    '<a href="produto/detalhe.html?id=' + elemento.id + '">' +
+                    '<img src="data:image/jpg;base64, ' + elemento.imagem + '" alt="" data-id="' + elemento.id + '">' +
+                    '<p>' + elemento.nome + '</p>' +
+                    '<h5>' + preco + '</h5>' +
+                    '</a>' +
                     '</div>'
                 );
+
             });
 
         },
