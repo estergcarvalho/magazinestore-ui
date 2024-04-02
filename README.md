@@ -1,4 +1,4 @@
-# Magazine Store-ui
+# magazinestore-ui
 
 Este é o repositório do front-end do projeto MagazineStore, um e-commerce desenvolvido com o objetivo de aprimorar habilidades de desenvolvimento front-end.
 
@@ -7,9 +7,9 @@ Este é o repositório do front-end do projeto MagazineStore, um e-commerce dese
 ## Requisitos
 
 O projeto faz uso de: 
-`Visual Studio`
-
-- [Visual Studio](https://code.visualstudio.com/)
+- HTML
+- CSS
+- JAVASCRIPT
 
 ---
 
